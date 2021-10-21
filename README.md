@@ -1,6 +1,11 @@
 # js-mnl-punct-norm
 
+## Installation
 
+1. Download the tgz file
+2. In the project directory, excute:
+
+npm install mnl-punct-norm-1.0.0.tgz
 
 ## function isPunct(char)
 
