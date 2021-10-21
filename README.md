@@ -1,5 +1,7 @@
 # js-mnl-punct-norm
 
+Light-weight tool for removing punctuation. Supports multiple natural languages. Useful for scrapping, machine learning, and data analysis.
+
 ## Installation
 
 1. Download the tgz file
