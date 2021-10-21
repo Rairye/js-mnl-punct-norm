@@ -138,3 +138,7 @@ var sourceStr = "★♡▲ Have a nice day!! ★♡▲";
 console.log(stripPunct(sourceStr, englishPunct));
 
 ```
+
+## Other languages
+
+Python -> https://github.com/Rairye/mnl-punct-norm
