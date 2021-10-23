@@ -1,13 +1,14 @@
 # js-mnl-punct-norm
 
-Light-weight tool for removing punctuation. Supports multiple natural languages. Useful for scrapping, machine learning, and data analysis.
+Tool for stripping and normalizing punctuation and other non-alphanumeric characters. Supports multiple natural languages. Useful for scrapping, machine learning, and data analysis.
+
+Note: "non-alphanumeric characters" include characters such as emojis and pictographs. Whitespace characters are not included. (If you would like to normalize whitespace characters, please see https://github.com/Rairye/js-mnl-ws-norm ) 
+
+Hereinafter, the terms "punctuation marks" and "punctuation" refer to both punctuation marks and other non-alphanumeric characters.
 
 ## Installation
 
-1. Download the tgz file
-2. In the project directory, excute:
-
-npm install mnl-punct-norm-1.0.0.tgz
+npm install mnl-punct-norm
 
 ## function isPunct(char)
 
@@ -96,7 +97,7 @@ replacement must be passed as a string.
 
 Note: If the replacement string follows a space or other substring that is equal to the replacement string, the replacement string will not be added (to avoid creating extra spaces/substrings in the string returned by the function). 
 
-Also, in cases where multiple punctuations marks are used sequentially, only a single instance of the replacement string will be used.
+Also, in cases where multiple punctuation marks are used sequentially, only a single instance of the replacement string will be used.
 
 Note: There may be leading/trailing spaces in the string returned by the function, so you may want to use the trim() method if necessary.
 
@@ -122,7 +123,7 @@ console.log(replacePunct(multiplePunctStr));
 console.log(replacePunct(multiplePunctStr, "", " <PUNCT> "));
 ```
 
-## Use Case: Removing non-standard punctuation marks while keeping standard punctuation marks
+## Use Case: Removing non-standard punctuation marks (such as emojis) while keeping standard punctuation marks
 
 There may be cases where you only want to remove non-standard punctuation marks (such as in text taken from reviews, comment sections, or other places on the Web).
 
@@ -139,6 +140,6 @@ console.log(stripPunct(sourceStr, englishPunct));
 
 ```
 
-## Other languages
+## Other Languages
 
 Python -> https://github.com/Rairye/mnl-punct-norm
