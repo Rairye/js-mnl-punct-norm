@@ -36,6 +36,24 @@ console.log("Kanji character isPunct -> " + isPunct("私"));
 console.log("★ isPunct -> " + isPunct("★"));
 ```
 
+## function stripOuterPunct(word)
+
+ Required parameter -> word
+ 
+ Strips leading and trailing punctuation (stops at alphanumeric character or whitespace character).
+ 
+ ```javascript
+
+import {stripOuterPunct} from 'mnl-punct-norm';
+
+var source1 = "(((((((hey-buddy-how-is-it-going))))))";
+console.log(stripOuterPunct(source1));
+
+var source2 = "x=3-2";
+console.log(stripOuterPunct(source2));
+
+```
+
 ## function stripPunct(inputStr, inputSkips = "")
 
 This function strips all punctuation marks from a string.
